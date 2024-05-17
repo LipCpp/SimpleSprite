@@ -3,12 +3,13 @@
 # Description:
 
 Just a template which demonstrates the usage of sprites. Maybe it will turn into a game sometimes (Who knows).
-<img width="600" src="/img/demo.gif">
+<img width="500" src="/img/demo.gif">
 
 
 # Used resources:
 
-The sprites are from <a href="https://gandalfhardcore.itch.io/free-pixel-art" target="_blank"> itch.io </a>
+* The sprites are from <a href="https://gandalfhardcore.itch.io/free-pixel-art" target="_blank"> itch.io </a>
+* The background is from: <a href="https://opengameart.org/content/tinyrpg-stranger-forest-pack" target="_blank"> opengameart </a>
 
 # Used library:
 

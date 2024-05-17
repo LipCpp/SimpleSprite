@@ -15,7 +15,7 @@
 #include "raymath.h"
 
 #define WIDTH 800
-#define HEIGHT 800
+#define HEIGHT 700
 #define FPS 60
 #define MAX_BUFFER 256
 

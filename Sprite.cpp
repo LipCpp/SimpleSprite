@@ -1,7 +1,3 @@
-//
-// Created by hyperion on 06.05.24.
-//
-
 #include "Sprite.h"
 
 
@@ -14,29 +10,50 @@ Sprite::Sprite(string fileName, uint numRows, uint numCols) :
         numMaxCols(numCols)
 {
     Image img = LoadImage(fileName.c_str());
+    Image imgInv = LoadImage(fileName.c_str());
     const float sizeFactor = 2;
     ImageResize(&img, img.width * sizeFactor, img.height * sizeFactor);
+    ImageResize(&imgInv, imgInv.width * sizeFactor, imgInv.height * sizeFactor);
+    ImageFlipHorizontal(&imgInv);
     texture = LoadTextureFromImage(img);
+    textureInv = LoadTextureFromImage(imgInv);
     SPRITE_WIDTH = (float) (texture.width / numMaxCols);
     SPRITE_HEIGHT = (float) (texture.height / numMaxRows);
 }
 
 Sprite::~Sprite()
 {
-
+    // free resources
+    UnloadTexture(texture);
+    UnloadTexture(textureInv);
 }
 
 /*
  * Class methods
  */
-void Sprite::drawSprite(uint row, uint col, Vector2 pos)
+void Sprite::drawSprite(uint row, Vector2 pos, bool inverted)
 {
-    Rectangle currSprRec = {col * SPRITE_WIDTH,
-                            row * SPRITE_HEIGHT,
-                            SPRITE_WIDTH,
-                            SPRITE_HEIGHT };
+    float currTime = GetTime();
 
-    DrawTextureRec(texture, currSprRec, pos, WHITE);
+    if (inverted)
+    {
+        uint col = (int)(currTime * CURR_TIME_FACTOR) % NUM_COLUMNS[row] ;
+        Rectangle currSprRec = { (textureInv.width - SPRITE_WIDTH) - col * SPRITE_WIDTH,
+                                row * SPRITE_HEIGHT,
+                                SPRITE_WIDTH,
+                                SPRITE_HEIGHT };
+        DrawTextureRec(textureInv, currSprRec, pos,  WHITE);
+
+    }
+    else
+    {
+        uint col = (int)(currTime * CURR_TIME_FACTOR) % NUM_COLUMNS[row];
+        Rectangle currSprRec = {col * SPRITE_WIDTH,
+                                row * SPRITE_HEIGHT,
+                                SPRITE_WIDTH,
+                                SPRITE_HEIGHT };
+        DrawTextureRec(texture, currSprRec, pos, WHITE);
+    }
 }
 
 string Sprite::getFileName() { return fileName; }
