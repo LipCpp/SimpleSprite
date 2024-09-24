@@ -1,9 +1,43 @@
 /opt/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/hyperion/CLionProjects/SimpleSprite -B /home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Populating raylib
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-subbuild
-ninja: no work to do.
+[1/9] Creating directories for 'raylib-populate'
+[1/9] Performing download step (download, verify and extract) for 'raylib-populate'
+-- Downloading...
+   dst='/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/5.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/raysan5/raylib/archive/refs/tags/5.0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/5.0.tar.gz'
+     dst='/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[2/9] No update step for 'raylib-populate'
+[3/9] No patch step for 'raylib-populate'
+[5/9] No configure step for 'raylib-populate'
+[6/9] No build step for 'raylib-populate'
+[7/9] No install step for 'raylib-populate'
+[8/9] No test step for 'raylib-populate'
+[9/9] Completed 'raylib-populate'
 CMake Deprecation Warning at cmake-build-debug/_deps/raylib-src/CMakeLists.txt:1 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -23,6 +57,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/raylib-src/CMakeLists.txt:1
 -- Compiling with the flags:
 --   PLATFORM=PLATFORM_DESKTOP
 --   GRAPHICS=GRAPHICS_API_OPENGL_33
--- Configuring done (0.2s)
+-- Configuring done (4.6s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug

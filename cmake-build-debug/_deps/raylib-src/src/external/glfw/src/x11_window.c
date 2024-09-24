@@ -41,7 +41,7 @@
 #include <errno.h>
 #include <assert.h>
 
-// Animation for EWMH client messages
+// Action for EWMH client messages
 #define _NET_WM_STATE_REMOVE        0
 #define _NET_WM_STATE_ADD           1
 #define _NET_WM_STATE_TOGGLE        2

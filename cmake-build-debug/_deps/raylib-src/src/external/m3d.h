@@ -3883,7 +3883,7 @@ memerr:         M3D_LOG("Out of memory");
         } else
         /* action */
         if(M3D_CHUNKMAGIC(data, 'A','C','T','N')) {
-            M3D_LOG("Animation");
+            M3D_LOG("Action");
             i = model->numaction++;
             model->action = (m3da_t*)M3D_REALLOC(model->action, model->numaction * sizeof(m3da_t));
             if(!model->action) goto memerr;
