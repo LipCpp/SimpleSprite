@@ -2,7 +2,7 @@
 
 
 /*
- * Constr. destr.
+ * Constructor and destructor
  */
 Sprite::Sprite(string fileName, uint numRows, uint numCols) :
         fileName(fileName),

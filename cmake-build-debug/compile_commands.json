@@ -7,15 +7,27 @@
 },
 {
   "directory": "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles/SimpleSprite.dir/Env.cpp.o -c /home/hyperion/CLionProjects/SimpleSprite/Env.cpp",
-  "file": "/home/hyperion/CLionProjects/SimpleSprite/Env.cpp",
-  "output": "CMakeFiles/SimpleSprite.dir/Env.cpp.o"
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles/SimpleSprite.dir/Window.cpp.o -c /home/hyperion/CLionProjects/SimpleSprite/Window.cpp",
+  "file": "/home/hyperion/CLionProjects/SimpleSprite/Window.cpp",
+  "output": "CMakeFiles/SimpleSprite.dir/Window.cpp.o"
 },
 {
   "directory": "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug",
   "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles/SimpleSprite.dir/Sprite.cpp.o -c /home/hyperion/CLionProjects/SimpleSprite/Sprite.cpp",
   "file": "/home/hyperion/CLionProjects/SimpleSprite/Sprite.cpp",
   "output": "CMakeFiles/SimpleSprite.dir/Sprite.cpp.o"
+},
+{
+  "directory": "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles/SimpleSprite.dir/Util.cpp.o -c /home/hyperion/CLionProjects/SimpleSprite/Util.cpp",
+  "file": "/home/hyperion/CLionProjects/SimpleSprite/Util.cpp",
+  "output": "CMakeFiles/SimpleSprite.dir/Util.cpp.o"
+},
+{
+  "directory": "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -g -fdiagnostics-color=always -o CMakeFiles/SimpleSprite.dir/ActionHandler.cpp.o -c /home/hyperion/CLionProjects/SimpleSprite/ActionHandler.cpp",
+  "file": "/home/hyperion/CLionProjects/SimpleSprite/ActionHandler.cpp",
+  "output": "CMakeFiles/SimpleSprite.dir/ActionHandler.cpp.o"
 },
 {
   "directory": "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug",

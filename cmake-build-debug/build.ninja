@@ -57,9 +57,9 @@ build CMakeFiles/SimpleSprite.dir/main.cpp.o: CXX_COMPILER__SimpleSprite_unscann
   OBJECT_DIR = CMakeFiles/SimpleSprite.dir
   OBJECT_FILE_DIR = CMakeFiles/SimpleSprite.dir
 
-build CMakeFiles/SimpleSprite.dir/Env.cpp.o: CXX_COMPILER__SimpleSprite_unscanned_Debug /home/hyperion/CLionProjects/SimpleSprite/Env.cpp || cmake_object_order_depends_target_SimpleSprite
+build CMakeFiles/SimpleSprite.dir/Window.cpp.o: CXX_COMPILER__SimpleSprite_unscanned_Debug /home/hyperion/CLionProjects/SimpleSprite/Window.cpp || cmake_object_order_depends_target_SimpleSprite
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles/SimpleSprite.dir/Env.cpp.o.d
+  DEP_FILE = CMakeFiles/SimpleSprite.dir/Window.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles/SimpleSprite.dir
@@ -73,6 +73,22 @@ build CMakeFiles/SimpleSprite.dir/Sprite.cpp.o: CXX_COMPILER__SimpleSprite_unsca
   OBJECT_DIR = CMakeFiles/SimpleSprite.dir
   OBJECT_FILE_DIR = CMakeFiles/SimpleSprite.dir
 
+build CMakeFiles/SimpleSprite.dir/Util.cpp.o: CXX_COMPILER__SimpleSprite_unscanned_Debug /home/hyperion/CLionProjects/SimpleSprite/Util.cpp || cmake_object_order_depends_target_SimpleSprite
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles/SimpleSprite.dir/Util.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles/SimpleSprite.dir
+  OBJECT_FILE_DIR = CMakeFiles/SimpleSprite.dir
+
+build CMakeFiles/SimpleSprite.dir/ActionHandler.cpp.o: CXX_COMPILER__SimpleSprite_unscanned_Debug /home/hyperion/CLionProjects/SimpleSprite/ActionHandler.cpp || cmake_object_order_depends_target_SimpleSprite
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles/SimpleSprite.dir/ActionHandler.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src -I/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles/SimpleSprite.dir
+  OBJECT_FILE_DIR = CMakeFiles/SimpleSprite.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SimpleSprite
@@ -81,7 +97,7 @@ build CMakeFiles/SimpleSprite.dir/Sprite.cpp.o: CXX_COMPILER__SimpleSprite_unsca
 #############################################
 # Link the executable SimpleSprite
 
-build SimpleSprite: CXX_EXECUTABLE_LINKER__SimpleSprite_Debug CMakeFiles/SimpleSprite.dir/main.cpp.o CMakeFiles/SimpleSprite.dir/Env.cpp.o CMakeFiles/SimpleSprite.dir/Sprite.cpp.o | _deps/raylib-build/raylib/libraylib.a /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so _deps/raylib-build/raylib/external/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a /usr/lib/x86_64-linux-gnu/libm.so || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+build SimpleSprite: CXX_EXECUTABLE_LINKER__SimpleSprite_Debug CMakeFiles/SimpleSprite.dir/main.cpp.o CMakeFiles/SimpleSprite.dir/Window.cpp.o CMakeFiles/SimpleSprite.dir/Sprite.cpp.o CMakeFiles/SimpleSprite.dir/Util.cpp.o CMakeFiles/SimpleSprite.dir/ActionHandler.cpp.o | _deps/raylib-build/raylib/libraylib.a /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so _deps/raylib-build/raylib/external/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a /usr/lib/x86_64-linux-gnu/libm.so || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lm  -lpthread  /usr/lib/x86_64-linux-gnu/libOpenGL.so  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libGLU.so  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  /usr/lib/x86_64-linux-gnu/librt.a  -lm  -ldl
   OBJECT_DIR = CMakeFiles/SimpleSprite.dir

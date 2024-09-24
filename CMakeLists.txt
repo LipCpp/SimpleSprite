@@ -25,12 +25,16 @@ endif()
 
 # Our Project
 add_executable(${PROJECT_NAME}
-        main.cpp
-        Env.cpp
-        Env.h
-        Sprite.cpp
-        Sprite.h
-        constants.h
+    main.cpp
+    Window.cpp
+    Window.h
+    Sprite.cpp
+    Sprite.h
+    constants.h
+    Util.cpp
+    Util.h
+    ActionHandler.cpp
+        AnimationHandler.h
 )
 
 #set(raylib_VERBOSE 1)

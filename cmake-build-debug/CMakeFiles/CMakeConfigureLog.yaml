@@ -701,3 +701,34 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/opt/clion/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aYLHGX"
+      binary: "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aYLHGX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/cmake;/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aYLHGX'
+        
+        Run Build Command(s): /opt/clion/bin/ninja/linux/x64/ninja -v cmTC_abd9b
+        [1/2] /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu99 -fdiagnostics-color=always -o CMakeFiles/cmTC_abd9b.dir/CheckFunctionExists.c.o -c /home/hyperion/CLionProjects/SimpleSprite/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-aYLHGX/CheckFunctionExists.c
+        [2/2] : && /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber  CMakeFiles/cmTC_abd9b.dir/CheckFunctionExists.c.o -o cmTC_abd9b  -lICE && :
+        
+      exitCode: 0
+...

@@ -1,9 +1,9 @@
-#include "Env.h"
+#include "Window.h"
 
 
 int main()
 {
-    Env world("Test environment");
+    Window world("Simple Sprite");
 
     return 0;
 }

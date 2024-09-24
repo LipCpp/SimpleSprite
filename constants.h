@@ -1,7 +1,3 @@
-//
-// Created by hyperion on 06.05.24.
-//
-
 #ifndef SIMPLESPRITE_CONSTANTS_H
 #define SIMPLESPRITE_CONSTANTS_H
 
@@ -14,10 +10,13 @@
 #include "raylib.h"
 #include "raymath.h"
 
+#define DEBUG true
 #define WIDTH 800
 #define HEIGHT 700
 #define FPS 60
 #define MAX_BUFFER 256
+#define LEFT 0
+#define RIGHT 1
 
 using namespace std;
 
